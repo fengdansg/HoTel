@@ -42,7 +42,7 @@
   ],
   "dependencies": {
     "promiscuous": "^0.6.0",
-    "ws": "^1.0.1"
+    "ws": "^7.2.0"
   },
   "deprecated": false,
   "description": "A simple, intuitive, and powerful JavaScript signaling library",
