@@ -1,0 +1,126 @@
+page-call {
+  ion-content{
+    background-color:#000000 !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/iphoneBackground.jpg') ;;
+  }
+
+
+  .keyboardtype{
+    vertical-align:middle;
+    padding-left:0;
+    padding-right:0;
+    text-align:center;
+    font-size:270%;
+    font-weight:500;
+    margin:0;
+    resize:both;
+    color:#000000;
+  }
+  .keyboardtype .text-input{
+    margin:0;
+    margin-top:6px;
+  }
+
+ .text-input[disabled]{
+    opacity:1;
+   font-weight:300;
+
+  }
+
+  .hotelbutton .button-block{
+    //height:5.2rem;
+  }
+
+  .infolefttype{
+    font-size:12px;
+    color:darkgrey;
+    text-align:center;
+  }
+  .inforighttype{
+    font-size:12px;
+    color:darkgrey;
+    text-align:center;
+  }
+  .icon-image{
+    max-width:80%;
+    padding-bottom:8px;
+  }
+
+   .keypadrow{
+     padding-left:16px;
+     padding-right:16px;
+     padding-top:0;
+     padding-bottom:10px;
+     text-align:center;
+     height:90px;
+   }
+  .keypadcol{
+    text-align:center;
+    //padding-left:8px;
+    //padding-right:8px;
+    //align-self:center;
+  }
+  .keypadbutton{
+    border-radius:50%;
+    height: 85px;
+    width:85px;
+    color:#000000;
+    //display: block;
+    font-size: 230%;
+    border: 2px solid #0a6cf1;
+  }
+  .endbutton-row{
+    padding-top:16px;
+    text-align:center;
+
+  }
+
+  .endbutton{
+    background-color:red;
+    opacity:1;
+   width:80%;
+  }
+
+  .acceptbutton{
+    background-color:#5BC236;
+    opacity:1;
+    width:80%;
+  }
+  .acceptbutton-row{
+    padding-top:16px;
+    text-align:center;
+  }
+
+  .transparent-body {
+    background: none transparent !important;
+    opacity: 0 !important;
+  }
+
+  .callleeRow{
+   padding-top:10%;
+
+    text-align:center;
+  }
+
+  .calleeCol{
+    font-size:60px;
+    text-align:center;
+    font-weight:300;
+    color:white;
+
+  }
+  .msgCol{
+
+text-align:center;
+    font-size:14px;
+    color:white;
+  }
+  .msgRow{
+    text-align:center;
+
+
+
+  }
+}
+
+

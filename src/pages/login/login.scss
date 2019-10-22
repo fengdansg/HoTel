@@ -1,0 +1,44 @@
+page-login {
+
+  .HoappName{
+    font-size:80px;
+    font-family: Agency FB;
+    color: #fa0101;
+    text-align:center;
+    padding-right:0;
+    padding-top:20px;
+  }
+  .TelappName{
+    font-size:80px;
+    font-family: Agency FB;
+    color: #000000;
+    text-align:left;
+    padding-left:0;
+  }
+  .imgSet{
+    padding-top:20px;
+    padding-left:40px;
+    padding-right:40px;
+
+  }
+  .titleimg{
+    max-width:50%;
+  }
+  .instructionText{
+    font-size:16px;
+    padding-top:20px;
+  }
+  .buttonCol{
+    text-align:center;
+    padding-top:40px;
+    align-items:center;
+    align-content: center;
+  }
+  .buttonType{
+    font-size: 16px;
+    width:80%;
+    align-self:center;
+    background-color:#0a6cf1;
+  }
+
+}

@@ -1,0 +1,119 @@
+<ion-menu [content]="mycontent" >
+
+  <ion-header>
+    <ion-toolbar  style="height:20%">
+      <ion-row align="center" no-padding no-margin >
+
+        <ion-col  col-4 class="avatartype">
+          <ion-avatar>
+            <img src="assets/images/profilePhoto.png">
+          </ion-avatar>
+        </ion-col>
+
+        <ion-col col-8 no-padding>
+          <ion-row no-padding>
+            <ion-col class="hotelnametype">
+              Hotel Name
+            </ion-col>
+          </ion-row>
+
+          <ion-row no-padding>
+            <ion-col class="roomnumbertype">
+              Room 7876
+            </ion-col>
+          </ion-row>
+
+          <ion-row no-padding>
+            <ion-col text-wrap class="useridtype">
+              User ID: 798179HIU3432
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row >
+
+    </ion-toolbar>
+
+  </ion-header>
+
+
+  <ion-content no-padding no-margin >
+    <ion-list no-lines>
+
+      <button ion-item detail-none class="buttonsidemenutype">
+        <ion-row class="sidemenulist" >
+          <ion-col col-2 class="sidemenuicon">
+            <ion-icon icon-only name="person" ></ion-icon>
+          </ion-col>
+          <ion-col col-10 class="sidemenutext">
+            Profile
+          </ion-col>
+        </ion-row>
+      </button>
+
+      <button ion-item detail-none class="buttonsidemenutype">
+        <ion-row class="sidemenulist">
+          <ion-col col-2>
+            <ion-icon icon-only name="help-circle" class="sidemenuicon"></ion-icon>
+          </ion-col>
+          <ion-col col-10 class="sidemenutext">
+            FAQ
+          </ion-col>
+        </ion-row>
+      </button>
+
+      <button ion-item detail-none class="buttonsidemenutype">
+        <ion-row class="sidemenulist">
+          <ion-col col-2>
+            <ion-icon icon-only name="paper" class="sidemenuicon"></ion-icon>
+          </ion-col>
+          <ion-col col-10 class="sidemenutext">
+            Feedback
+          </ion-col>
+
+        </ion-row>
+      </button>
+
+      <button ion-item detail-none class="buttonsidemenutype">
+        <ion-row class="sidemenulist">
+          <ion-col col-2>
+            <ion-icon icon-only name="notifications" class="sidemenuicon"></ion-icon>
+          </ion-col>
+          <ion-col col-10 class="sidemenutext">Notification
+          </ion-col>
+
+        </ion-row>
+      </button>
+
+      <button ion-item detail-none class="buttonsidemenutype">
+        <ion-row class="sidemenulist">
+          <ion-col col-2>
+            <ion-icon icon-only name="settings" class="sidemenuicon"></ion-icon>
+          </ion-col>
+          <ion-col col-10 class="sidemenutext">
+            Setting
+          </ion-col>
+
+        </ion-row>
+      </button>
+
+      <button ion-item detail-none class="buttonsidemenutype">
+        <ion-row  class="logouttext" >
+          <ion-col col-2>
+            <ion-icon icon-only name="log-out" class="sidemenuicon"></ion-icon>
+          </ion-col>
+          <ion-col col-10 class="sidemenutext">
+            Log Out
+          </ion-col>
+
+        </ion-row>
+      </button>
+
+
+    </ion-list>
+
+
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav>

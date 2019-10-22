@@ -1,0 +1,255 @@
+<!--
+  Generated template for the CallPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title *ngIf="contentstyle=='hotel'">
+      <ion-row>
+        <ion-col class="hotelnametitle">
+          Hotel Name
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="roomnametitle">
+          Room 8760
+        </ion-col>
+      </ion-row>
+    </ion-title>
+
+
+    <ion-segment [(ngModel)]="contentstyle" class="segmentTitle" *ngIf="contentstyle=='keyboard'">
+      <ion-segment-button value="hotel" >
+        Hotel
+      </ion-segment-button>
+      <ion-segment-button value="keyboard" >
+        Keyboard
+      </ion-segment-button>
+    </ion-segment>
+
+
+    <ion-buttons left>
+      <button ion-button icon-only (click)="viewMenu()">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons right>
+      <button ion-button clear block (click)="scanQRPage()" class="scanButton">
+        <ion-icon name="qr-scanner" class="scanicon"></ion-icon>Scan
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+
+
+</ion-header>
+
+
+<ion-content no-padding no-margin  [ngSwitch]="contentstyle">
+  <ion-toolbar *ngIf="contentstyle=='hotel'" class="toolbarstyle">
+    <ion-segment [(ngModel)]="contentstyle" class="segmentTitle">
+      <ion-segment-button value="hotel" >
+        Hotel
+      </ion-segment-button>
+      <ion-segment-button value="keyboard" >
+        Keyboard
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+  <ion-row *ngSwitchCase="'hotel'">
+    <ion-col>
+      <ion-row>
+        <ion-col col-4>
+          <button ion-button block outline class="hotelbutton" text-wrap>
+            <img src="assets/images/front-desk.png" class="icon-image">Front Desk
+          </button>
+        </ion-col>
+
+        <ion-col col-4>
+          <button ion-button block outline class="hotelbutton" text-wrap>
+            <img src="assets/images/assistantmanager.png" class="icon-image">
+            Assistant Manager
+          </button>
+        </ion-col>
+
+        <ion-col col-4>
+          <button ion-button block outline class="hotelbutton" text-wrap>
+            <img src="assets/images/concierge.png" class="icon-image">
+            Concierge
+          </button>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col col-4>
+          <button ion-button block outline class="hotelbutton" text-wrap>
+            <img src="assets/images/dining.png" class="icon-image">
+            Room Services
+          </button>
+        </ion-col>
+
+        <ion-col col-4>
+          <button ion-button block outline class="hotelbutton" text-wrap>
+            <img src="assets/images/housekeeping.png" class="icon-image">
+            House- keeping
+          </button>
+        </ion-col>
+
+        <ion-col col-4>
+          <button ion-button block outline class="hotelbutton" text-wrap>
+            <img src="assets/images/emergency.jpg" class="icon-image">
+            Emergency
+          </button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-4>
+          <button ion-button block outline class="hotelbutton" text-wrap>
+            <img src="assets/images/valet.png" class="icon-image">
+            Valet
+          </button>
+        </ion-col>
+
+        <ion-col col-4>
+          <button ion-button block outline class="hotelbutton" text-wrap>
+            <img src="assets/images/spa.png" class="icon-image">
+            Spa
+          </button>
+        </ion-col>
+
+        <ion-col col-4>
+
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row *ngSwitchCase="'keyboard'" no-padding no-margin>
+    <ion-col no-padding no-margin>
+      <ion-row no-padding no-margin>
+        <ion-col col-2 no-padding no-margin class="addbutton">
+          <button ion-button icon-only  no-padding no-margin clear>
+            <ion-icon name="ios-add-circle-outline" class="icontype"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col col-8 no-padding no-margin>
+          <ion-input clear class="keyboardtype" text-wrap [(ngModel)]="phone_number" text-center [disabled]="true"></ion-input>
+        </ion-col>
+        <ion-col col-2 no-padding no-margin class="clearbutton">
+          <button ion-button icon-only  no-padding no-margin clear (click)="clearnumber()">
+            <ion-icon name="ios-backspace-outline" class="icontype"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row no-padding no-margin>
+        <ion-col col-6 no-padding no-margin text-wrap class="infolefttype"> Local Call: 9+Tel No
+        </ion-col>
+        <ion-col col-6 no-padding no-margin text-wrap class="inforighttype">DDD:9+Area Code+TelNo
+        </ion-col>
+      </ion-row>
+      <ion-row no-padding no-margin>
+        <ion-col col-6 no-padding no-margin text-wrap class="infolefttype">Room:8+Room No
+        </ion-col>
+        <ion-col col-6 no-padding no-margin text-wrap class="inforighttype"> IDD:9+CountryCode+AreNo
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="keypadrow">
+        <ion-col col-4 class="keypadcol">
+          <button ion-button round outline class="keypadbutton" (click)="enternumber('1')">
+            1
+          </button>
+        </ion-col>
+        <ion-col col-4 class="keypadcol">
+          <button ion-button round outline class="keypadbutton" (click)="enternumber('2')">
+            2
+          </button>
+        </ion-col>
+        <ion-col col-4 class="keypadcol">
+          <button ion-button round outline class="keypadbutton" (click)="enternumber('3')">
+            3
+          </button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="keypadrow">
+        <ion-col col-4 class="keypadcol">
+          <button ion-button round outline class="keypadbutton" (click)="enternumber('4')">
+            4
+          </button>
+        </ion-col>
+        <ion-col col-4 class="keypadcol">
+          <button ion-button round outline class="keypadbutton" (click)="enternumber('5')">
+            5
+          </button>
+        </ion-col>
+        <ion-col col-4 class="keypadcol">
+          <button ion-button round outline class="keypadbutton" (click)="enternumber('6')">
+            6
+          </button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="keypadrow">
+        <ion-col col-4 class="keypadcol">
+          <button ion-button round outline class="keypadbutton" (click)="enternumber('7')">
+            7
+          </button>
+        </ion-col>
+        <ion-col col-4 class="keypadcol">
+          <button ion-button round outline class="keypadbutton" (click)="enternumber('8')">
+            8
+          </button>
+        </ion-col>
+        <ion-col col-4 class="keypadcol">
+          <button ion-button round outline class="keypadbutton" (click)="enternumber('9')">
+            9
+          </button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="keypadrow">
+        <ion-col col-4 class="keypadcol">
+          <button ion-button round outline class="keypadbutton" (click)="enternumber('8')">
+            *
+          </button>
+        </ion-col>
+        <ion-col col-4 class="keypadcol">
+          <button ion-button round outline class="keypadbutton" (click)="enternumber('0')">
+            0
+          </button>
+        </ion-col>
+        <ion-col col-4 class="keypadcol">
+          <button ion-button round outline class="keypadbutton" (click)="enternumber('#')">
+            #
+          </button>
+        </ion-col></ion-row>
+
+      <ion-row class="callbutton-row">
+        <ion-col>
+          <button ion-button  (click)="callnumber()" class="callbutton">
+            <ion-icon icon-left name="call">  Call</ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+
+    </ion-col>
+
+  </ion-row>
+
+  <video id="remoteVideo"></video>
+  <video id="localVideo" muted="muted"></video>
+
+
+
+</ion-content>

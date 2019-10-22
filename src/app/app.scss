@@ -1,0 +1,79 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.avatartype{
+  padding-left:16px;
+}
+
+.hotelnametype{
+  font-size:18px;
+  font-weight:500;
+  padding-top:10px;
+  padding-bottom:0;
+}
+.roomnumbertype{
+  font-size:12px;
+  padding:0;
+}
+.useridtype{
+  font-size:12px;
+  padding:0;
+}
+.sidemenulist{
+
+  font-size:20px;
+  vertical-align:middle;
+
+}
+.buttonsidemenutype{
+  padding-left:8px;
+  padding-right:8px;
+  margin:0;
+
+  padding-top:0;
+  padding-bottom:0;
+}
+
+.buttonsidemenutype .label{
+  margin:0;
+}
+.sidemenuicon{
+  font-size:25px;
+  padding-top:0;
+  padding-bottom:0;
+  margin-top:0;
+  margin-bottom:0;
+  vertical-align:middle;
+
+}
+
+.sidemenutext{
+  vertical-align:middle;
+  padding-left:12px;
+  text-align:left;
+  padding-bottom:0;
+  margin-top:0;
+  margin-bottom:0;
+  padding-top:6px;
+
+}
+
+.logouttext{
+  color:#fa0101;
+  font-size:20px;
+  vertical-align:middle;
+}

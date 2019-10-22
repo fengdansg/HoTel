@@ -1,0 +1,94 @@
+{
+  "_from": "sip.js",
+  "_id": "sip.js@0.9.0",
+  "_inBundle": false,
+  "_integrity": "sha512-eM6SvIfkWqPPYBNkoAEpWWumZNHbs0giKtPOvvdABbPl3EcL4UhczO7Iq7LF5mutdOPIlFjy1Xq/JdPeCKr+fA==",
+  "_location": "/sip.js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "sip.js",
+    "name": "sip.js",
+    "escapedName": "sip.js",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/sip.js/-/sip.js-0.9.0.tgz",
+  "_shasum": "bfedc76efee2d1f8a6ed5816085f32f5b954a501",
+  "_spec": "sip.js",
+  "_where": "/Users/fengdan/Documents/Ionic/HoTel",
+  "author": {
+    "name": "OnSIP",
+    "email": "developer@onsip.com",
+    "url": "https://sipjs.com/aboutus/"
+  },
+  "browser": {
+    "./src/environment.js": "./src/environment_browser.js"
+  },
+  "bugs": {
+    "url": "https://github.com/onsip/SIP.js/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "url": "https://github.com/onsip/SIP.js/blob/master/THANKS.md"
+    }
+  ],
+  "dependencies": {
+    "promiscuous": "^0.6.0",
+    "ws": "^1.0.1"
+  },
+  "deprecated": false,
+  "description": "A simple, intuitive, and powerful JavaScript signaling library",
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-loader": "^1.9.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-webpack": "^2.0.6",
+    "pegjs": "^0.10.0",
+    "pegjs-loader": "^0.5.4",
+    "uglifyjs-webpack-plugin": "^1.0.1",
+    "webpack": "^3.8.1"
+  },
+  "engines": {
+    "node": ">=4.0"
+  },
+  "homepage": "https://sipjs.com",
+  "keywords": [
+    "sip",
+    "websocket",
+    "webrtc",
+    "library",
+    "javascript"
+  ],
+  "license": "MIT",
+  "main": "dist/sip.min.js",
+  "name": "sip.js",
+  "optionalDependencies": {
+    "promiscuous": "^0.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onsip/SIP.js.git"
+  },
+  "scripts": {
+    "browserTest": "sleep 2 && open http://0.0.0.0:9876/debug.html & karma start --reporters kjhtml --no-single-run",
+    "build": "webpack --progress && cp dist/sip.js dist/sip-$npm_package_version.js && cp dist/sip.min.js  dist/sip-$npm_package_version.min.js",
+    "buildAndTest": "npm run build && npm run commandLineTest",
+    "commandLineTest": "karma start --reporters mocha --browsers PhantomJS --single-run"
+  },
+  "title": "SIP.js",
+  "version": "0.9.0"
+}

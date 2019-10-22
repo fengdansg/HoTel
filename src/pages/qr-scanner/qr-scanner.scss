@@ -1,0 +1,19 @@
+page-qr-scanner {
+.rowstyle{
+  align-content:center;
+  padding-top:40%;
+}
+
+.colstyle{
+  align-content:center;
+  padding-left:20%;
+  padding-right:20%;
+}
+
+
+
+}
+
+ion-app.cameraView, ion-app.cameraView ion-content, ion-app.cameraView .nav-decor {
+  background: transparent none !important;
+}

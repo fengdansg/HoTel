@@ -1,0 +1,8 @@
+{
+  "name": "HoTel",
+  "app_id": "ee13bec6",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
